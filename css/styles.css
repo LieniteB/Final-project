@@ -16,8 +16,6 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px 80px;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   margin: 0;
   position: -webkit-sticky;
   position: sticky;
@@ -38,6 +36,7 @@ header a {
 header a:hover,
 header a.active {
   color: #be7b0e;
+  cursor: pointer;
 }
 
 header ul {
@@ -53,7 +52,7 @@ header ul {
 .hero {
   background-image: url("../images/books.jpg");
   height: 80vh;
-  width: 100%;
+  width: 86.5%;
   background-size: cover;
   background-position: top 25% right 0;
   padding: 0 80px;
@@ -80,13 +79,23 @@ header ul {
 .hero #Subscribe {
   padding: 20px;
   margin: 10px;
-  background-color: #be7b0e;
+  background-color: #a3a525;
   border: none;
+  width: 200px;
+  height: 85px;
 }
 
 .hero #Subscribe a {
   color: white;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.hero #Subscribe :hover {
+  -webkit-box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+          box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+  color: #1F2937;
 }
 
 h2 {
@@ -172,6 +181,11 @@ h2 {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.section_store .card:hover {
+  -webkit-box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+          box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
 }
 
 .section_store .card img {
