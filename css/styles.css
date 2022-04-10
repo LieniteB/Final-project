@@ -82,7 +82,8 @@ header ul {
   background-color: #a3a525;
   border: none;
   width: 200px;
-  height: 85px;
+  height: 70px;
+  cursor: pointer;
 }
 
 .hero #Subscribe a {
@@ -92,10 +93,8 @@ header ul {
   font-size: 25px;
 }
 
-.hero #Subscribe :hover {
-  -webkit-box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
-          box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
-  color: #1F2937;
+.hero #Subscribe:hover {
+  background-color: #be7b0e;
 }
 
 h2 {
@@ -155,7 +154,7 @@ h2 {
 }
 
 .section_banner {
-  background-color: #f0df94;
+  background-color: #f6e7cf;
   margin: 20px 0;
   padding: 20px;
   display: -webkit-box;
@@ -187,11 +186,24 @@ h2 {
   background-color: #a3a525;
   border-radius: 0px;
   border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .section_banner button a {
   text-decoration: none;
   color: white;
+}
+
+.section_banner button:hover {
+  background-color: #be7b0e;
+}
+
+footer {
+  text-align: center;
+  background-color: #4b340b;
+  color: white;
+  padding: 30px;
 }
 
 .section_store {

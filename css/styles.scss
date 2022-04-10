@@ -66,8 +66,8 @@ header {
     background-color: #a3a525;
     border: none;
     width: 200px;
-    height: 85px;
-    
+    height: 70px;
+    cursor: pointer;
     a{
         color: white;
         text-decoration:none;
@@ -75,10 +75,10 @@ header {
         font-size: 25px;
 
     }
-    :hover{
-        box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
-        color: #1F2937;
-    }
+    
+}
+#Subscribe:hover{
+    background-color: #be7b0e;
 }
 
 
@@ -139,7 +139,7 @@ h2 {
 }
 
 .section_banner{
-    background-color: #f0df94;
+    background-color: rgb(246, 231, 207);
     margin:20px 0;
     padding: 20px;
     display: flex;
@@ -162,13 +162,31 @@ h2 {
         background-color: #a3a525;
         border-radius: 0px;
         border: none;
+        outline: none;
+        cursor: pointer;
+
         
         a{
             text-decoration: none;
             color: white;
         }
+
+        
     }
 }
+.section_banner button:hover{
+            background-color:#be7b0e;
+
+        }
+
+footer{
+    text-align: center;
+    background-color: rgb(75, 52, 11);
+    color: white;
+    padding: 30px;
+}
+        
+//store styles
 
 .section_store {
     display: flex;
