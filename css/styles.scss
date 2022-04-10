@@ -1,8 +1,7 @@
 body {
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
     font-family: "Poppins", sans-serif;
-    
 }
 
 header {
@@ -11,14 +10,11 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     margin: 0;
     position: sticky;
     top: 0;
     left: 0;
-
-    
-
     a {
         color: #e5e7eb;
         font-size: 18px;
@@ -28,10 +24,9 @@ header {
         transition: 0.3s ease;
     }
     a:hover,
-    a.active{
+    a.active {
         color: #be7b0e;
     }
-    
     ul {
         list-style-type: none;
         display: flex;
@@ -44,7 +39,7 @@ header {
 .hero {
     background-image: url("../images/books.jpg");
     height: 80vh;
-    width:100%;
+    width: 100%;
     background-size: cover;
     background-position: top 25% right 0;
     padding: 0 80px;
@@ -52,55 +47,52 @@ header {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
-    h1,h2,h3, h4, p,{
-    color: white;
-    margin: 10px;
-
-    
-}
-
-#Subscribe {
-    padding: 20px;
-    margin: 10px;
-    background-color: #be7b0e;
-    border: none;
-    
-    a{
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    {
         color: white;
-        text-decoration:none;
-
-        
+        margin: 10px;
+    }
+    #Subscribe {
+        padding: 20px;
+        margin: 10px;
+        background-color: #be7b0e;
+        border: none;
+        a {
+            color: white;
+            text-decoration: none;
+        }
     }
 }
 
-
-}
-
-.feature {
-
-}
+.feature {}
 
 h2 {
-    font-size:36px;
+    font-size: 36px;
     font-weight: bold;
     color: #1F2937;
     text-align: center;
+}
 
+h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1F2937;
+    text-align: center;
 }
 
 .section_1 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-
-
     h2 {
-        font-size:36px;
+        font-size: 36px;
         font-weight: bold;
         color: #1F2937;
         text-align: center;
-
     }
     .cards {
         display: flex;
@@ -113,7 +105,6 @@ h2 {
         border-radius: 100px;
         height: 200px;
         border: 5px solid #be7b0e;
-        
     }
     .card {
         margin: 10px;
@@ -121,26 +112,21 @@ h2 {
         // background-color: rgb(246, 231, 207);
         padding: 20px;
         border-radius: 20px;
-        p{
+        p {
             width: 200px;
         }
-        
     }
-    
 }
 
 .section_store {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-
-
     h2 {
-        font-size:36px;
+        font-size: 36px;
         font-weight: bold;
         color: #1F2937;
         text-align: center;
-
     }
     .cards {
         display: flex;
@@ -153,7 +139,6 @@ h2 {
         border-radius: 20px;
         height: 200px;
         border: 5px solid #be7b0e;
-        
     }
     .card {
         margin: 10px;
@@ -161,18 +146,15 @@ h2 {
         background-color: rgb(246, 231, 207);
         padding: 20px;
         border-radius: 20px;
-        p{
+        p {
             width: 200px;
         }
-        
     }
-    
 }
 
 @media only screen and (min-width: 1200px) {
     .wrapper {
         width: 1200px;
         margin: 0 auto;
-
     }
 }
