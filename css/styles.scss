@@ -105,7 +105,7 @@ h2 {
     h2 {
         font-size:36px;
         font-weight: bold;
-        color: #1F2937;
+        color: #rgb(75, 52, 11);
         text-align: center;
 
     }
@@ -136,6 +136,38 @@ h2 {
         
     }
     
+}
+
+.section_banner{
+    background-color: #f0df94;
+    margin:20px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    h2, h4{
+        color:rgb(75, 52, 11);
+        margin: 0;
+        padding: 10px;
+    }
+
+    button{
+        padding: 15px 30px;
+        font-size: 20px;
+        font-weight: 600;        
+        background-color: #a3a525;
+        border-radius: 0px;
+        border: none;
+        
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
 }
 
 .section_store {
