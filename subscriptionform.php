@@ -13,5 +13,5 @@ $query="INSERT INTO userinfo(user,email,mobile,comment)
 values('$user', '$email', '$mobile', '$comment')";
 echo "$query";
 mysqli_query($con,$query);
-header('location:subscriptionform.html');
+header('location:subscribe.html');
 ?>
