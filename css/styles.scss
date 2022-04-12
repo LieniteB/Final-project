@@ -180,10 +180,11 @@ footer {
 }
 
 //store styles
-h2{
+h2 {
     margin: 0;
 }
-.vertical_nav{
+
+.vertical_nav {
     ul {
         list-style-type: none;
         margin: 0;
@@ -196,10 +197,9 @@ h2{
     }
     li a {
         display: block;
-        color:white;
+        color: white;
         padding: 8px 16px;
         text-decoration: none;
-        
         text-align: center;
     }
     li a:hover {
@@ -211,6 +211,7 @@ h2{
         color: white;
     }
 }
+
 .section_store {
     display: flex;
     justify-content: center;
@@ -267,76 +268,63 @@ h2{
     background-color: #be7b0e;
 }
 
+//aboutuspage
 .aboutus1 {
-    background-image: url("../images/books.jpg");
-    height: 80vh;
-    width: 88, 2%;
+    height: 350px;
+    padding-bottom: 15px;
     background-size: cover;
-    background-position: top 25% right 0;
-    padding: 0 80px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
 }
 
 .aboutus2 {
-    background-color: #fdfdfd;
-    height: 80vh;
-    width: 88, 2%;
-    background-size: cover;
-    background-position: top 25% right 0;
-    padding: 0 80px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-end;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    background-color: #e9eb9e;
+    height: 350px;
+    padding-left: 670px;
 }
 
 .aboutus3 {
-    background-image: url("../images/books.jpg");
-    height: 80vh;
-    width: 88, 2%;
-    background-size: cover;
-    background-position: top 25% right 0;
-    padding: 0 80px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    background-color: #fdfdfd;
+    height: 350px;
 }
 
-//contact page style
-.contact_details {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 20px;
+.teksts {
+    text-align: justify;
+    width: 690px;
+    height: 350px;
+    float: left;
+    padding-left: 25px;
+}
+
+.teksts2 {
+    text-align: justify;
+    width: 690px;
+    height: 350px;
+    float: right;
+    padding-right: 25px;
+}
+
+//css adjustments for contactus
+.centered {
+    text-align: center;
+}
+
+.centered1 {
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.centered2 {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.centered0 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.centeredhead {
+    padding-left: 0px;
+    text-align: center;
 }

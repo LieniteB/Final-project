@@ -352,81 +352,61 @@ h2 {
 }
 
 .aboutus1 {
-  background-image: url("../images/books.jpg");
-  height: 80vh;
-  width: 88, 2%;
+  height: 350px;
+  padding-bottom: 15px;
   background-size: cover;
-  background-position: top 25% right 0;
-  padding: 0 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .aboutus2 {
-  background-color: #fdfdfd;
-  height: 80vh;
-  width: 88, 2%;
-  background-size: cover;
-  background-position: top 25% right 0;
-  padding: 0 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-end;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  background-color: #e9eb9e;
+  height: 350px;
+  padding-left: 670px;
 }
 
 .aboutus3 {
-  background-image: url("../images/books.jpg");
-  height: 80vh;
-  width: 88, 2%;
-  background-size: cover;
-  background-position: top 25% right 0;
-  padding: 0 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  background-color: #fdfdfd;
+  height: 350px;
 }
 
-.contact_details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 20px 20px;
+.teksts {
+  text-align: justify;
+  width: 690px;
+  height: 350px;
+  float: left;
+  padding-left: 25px;
+}
+
+.teksts2 {
+  text-align: justify;
+  width: 690px;
+  height: 350px;
+  float: right;
+  padding-right: 25px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.centered1 {
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+.centered2 {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.centered0 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.centeredhead {
+  padding-left: 0px;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
