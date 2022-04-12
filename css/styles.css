@@ -78,7 +78,9 @@ header ul {
           justify-content: center;
 }
 
-.hero h1, .hero h4, .hero p {
+.hero h1,
+.hero h4,
+.hero p {
   color: white;
 }
 
