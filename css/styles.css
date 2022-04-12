@@ -96,9 +96,11 @@ header ul {
   height: 85px;
   height: 70px;
   cursor: pointer;
+  display: block;
 }
 
 .hero #Subscribe a {
+  display: block;
   color: white;
   text-decoration: none;
   font-weight: 500;
@@ -236,6 +238,39 @@ footer {
   margin: 20px;
   padding: 10px 20px;
   background-color: #e9eb9e;
+}
+
+h2 {
+  margin: 0;
+}
+
+.vertical_nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #4b340b;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+}
+
+.vertical_nav li a {
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.vertical_nav li a:hover {
+  background-color: #be7b0e;
+  color: white;
+}
+
+.vertical_nav .active {
+  background-color: #be7b0e;
+  color: white;
 }
 
 .section_store {
