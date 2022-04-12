@@ -400,7 +400,7 @@ h2 {
 
 .centered0 {
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
   text-align: center;
   padding-left: 20px;
 }
@@ -408,5 +408,18 @@ h2 {
 .centeredhead {
   padding-left: 0px;
   text-align: center;
+}
+
+.contact_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 30px;
 }
 /*# sourceMappingURL=styles.css.map */

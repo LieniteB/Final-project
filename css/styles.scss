@@ -268,7 +268,7 @@ h2 {
     background-color: #be7b0e;
 }
 
-//aboutuspage
+//about us page
 .aboutus1 {
     height: 350px;
     padding-bottom: 15px;
@@ -303,6 +303,7 @@ h2 {
 }
 
 //css adjustments for contactus
+
 .centered {
     text-align: center;
 }
@@ -319,7 +320,7 @@ h2 {
 
 .centered0 {
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     text-align: center;
     padding-left: 20px;
 }
@@ -327,4 +328,11 @@ h2 {
 .centeredhead {
     padding-left: 0px;
     text-align: center;
+}
+
+.contact_details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
 }
