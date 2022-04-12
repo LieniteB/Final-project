@@ -3,12 +3,14 @@ body {
     padding: 0px;
     font-family: "Poppins", sans-serif;
 }
+
 h2 {
     font-size: 36px;
     font-weight: bold;
     color: #1F2937;
     text-align: center;
-}        
+}
+
 header {
     background-color: rgb(75, 52, 11);
     display: flex;
@@ -52,12 +54,12 @@ header {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
-    h1, h4, p{
+    h1,
+    h4,
+    p {
         color: white;
     }
-
-    h1{
+    h1 {
         font-size: 45px;
         margin: 5px;
     }
@@ -78,7 +80,7 @@ header {
             font-weight: 500;
             font-size: 25px;
         }
-            :hover {
+         :hover {
             box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
             color: #1F2937;
         }
@@ -87,9 +89,6 @@ header {
         background-color: #be7b0e;
     }
 }
-
-
-
 
 .section_1 {
     display: flex;
@@ -168,14 +167,12 @@ footer {
     padding: 30px;
 }
 
-.reviews{
+.reviews {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    
-
     .review {
-        width:200px;
+        width: 200px;
         margin: 20px;
         padding: 10px 20px;
         background-color: #e9eb9e;
@@ -249,7 +246,7 @@ h2{
             width: 200px;
             color: rgb(75, 52, 11)
         }
-        button{
+        button {
             padding: 15px 30px;
             font-size: 20px;
             font-weight: 600;
@@ -258,13 +255,10 @@ h2{
             border: none;
             outline: none;
             cursor: pointer;
-
             a {
                 text-decoration: none;
                 color: white;
             }
-            
-
         }
     }
 }
@@ -340,8 +334,7 @@ h2{
 }
 
 //contact page style
-
-.contact_details{
+.contact_details {
     display: flex;
     align-items: center;
     justify-content: space-between;
