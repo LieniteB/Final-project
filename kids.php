@@ -1,3 +1,22 @@
+<?php
+
+$servername ="localhost";
+$username ="root";
+$password="";
+$con = new mysqli($servername, $username, $password,"youtubeuserdata");
+
+if ($con->connect_error)
+    die("Connection error" . $con->connect_error);
+
+
+$sql = "SELECT * FROM products where ID = '3'";
+$result = $con->query($sql);
+$sql3 = "SELECT * FROM products where ID ='5'";
+$result3 = $con->query($sql3);
+$sql4 = "SELECT * FROM products where ID ='6'";
+$result4 = $con->query($sql4);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,9 +48,9 @@
 
             <ul>
                 <li><a href="products.php">All</a></li>
-                <li><a class="active" href="kids.html">Kids</a></li>
-                <li><a href="young_adult.html">Young Adult</a></li>
-                <li><a href="adult.html">Adult</a></li>
+                <li><a class="active" href="kids.php">Kids</a></li>
+                <li><a href="young_adult.php">Young Adult</a></li>
+                <li><a href="adult.php">Adult</a></li>
             </ul>
 
 
@@ -45,8 +64,31 @@
                 <div class="cards">
                     <div class="card">
                         <img src="images/books.jpg" alt="">
-                        <p>this is some subtext under an illustration or image</p>
-                        <h3>price: 35 eiro</h3>
+                        <?php
+                        while ($row = $result->fetch_assoc()) :
+                        ?>
+                        <p><?= $row["type"] ?> </p>
+                        <h3><?= $row["price"] ?></h3>
+                        <?php
+                         endwhile;
+                         ?>
+                        <button><a href="subscribe.html">subscribe</a></button>
+                    </div>
+
+
+                </div>
+            
+                <div class="cards">
+                    <div class="card">
+                        <img src="images/books.jpg" alt="">
+                        <?php
+                        while ($row = $result3->fetch_assoc()) :
+                        ?>
+                        <p><?= $row["type"] ?> </p>
+                        <h3><?= $row["price"] ?></h3>
+                        <?php
+                         endwhile;
+                         ?>
                         <button><a href="subscribe.html">subscribe</a></button>
                     </div>
 
@@ -55,18 +97,14 @@
                 <div class="cards">
                     <div class="card">
                         <img src="images/books.jpg" alt="">
-                        <p>this is some subtext under an illustration or image</p>
-                        <h3>price: 35 eiro</h3>
-                        <button><a href="subscribe.html">subscribe</a></button>
-                    </div>
-
-
-                </div>
-                <div class="cards">
-                    <div class="card">
-                        <img src="images/books.jpg" alt="">
-                        <p>this is some subtext under an illustration or image</p>
-                        <h3>price: 35 eiro</h3>
+                        <?php
+                        while ($row = $result4->fetch_assoc()) :
+                        ?>
+                        <p><?= $row["type"] ?> </p>
+                        <h3><?= $row["price"] ?></h3>
+                        <?php
+                         endwhile;
+                         ?>
                         <button><a href="subscribe.html">subscribe</a></button>
                     </div>
 
@@ -82,3 +120,7 @@
 </body>
 
 </html>
+
+<?php
+$con->close();
+?>

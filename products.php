@@ -47,9 +47,9 @@ $result2 = $con->query($sql2);
 
             <ul>
                 <li><a class="active" href="products.php">All</a></li>
-                <li><a href="kids.html">Kids</a></li>
-                <li><a href="young_adult.html">Young Adult</a></li>
-                <li><a href="adult.html">Adult</a></li>
+                <li><a href="kids.php">Kids</a></li>
+                <li><a href="young_adult.php">Young Adult</a></li>
+                <li><a href="adult.php">Adult</a></li>
             </ul>
 
 
