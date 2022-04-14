@@ -71,7 +71,9 @@ $result2 = $con->query($sql2);
                         <?php
                          endwhile;
                          ?>
-                        <button><a href="subscribe.html">subscribe</a></button>
+                        
+                        <input type=button onClick="parent.location='subscribe.html'"
+                            value='subscribe'>
                     </div>
 
 
@@ -87,7 +89,9 @@ $result2 = $con->query($sql2);
                         <?php
                          endwhile;
                          ?>
-                        <button><a href="subscribe.html">subscribe</a></button>
+                        
+                        <input type=button onClick="parent.location='subscribe.html'"
+                            value='subscribe'>
                     </div>
 
 
@@ -97,7 +101,9 @@ $result2 = $con->query($sql2);
                         <img src="images/books.jpg" alt="">
                         <p>type</p>
                         <h3>price</h3>
-                        <button><a href="subscribe.html">subscribe</a></button>
+                        
+                        <input type=button onClick="parent.location='subscribe.html'"
+                            value='subscribe'>
                     </div>
 
 

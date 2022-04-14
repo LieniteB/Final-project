@@ -73,20 +73,14 @@ header {
         height: 70px;
         cursor: pointer;
         display: block;
-        a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 25px;
-        }
-         :hover {
-            box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
-            color: #1F2937;
-        }
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 25px;
     }
     #Subscribe:hover {
         background-color: #be7b0e;
+        
     }
 }
 
@@ -140,7 +134,7 @@ header {
         margin: 0;
         padding: 10px;
     }
-    button {
+    input {
         padding: 15px 30px;
         font-size: 20px;
         font-weight: 600;
@@ -149,14 +143,14 @@ header {
         border: none;
         outline: none;
         cursor: pointer;
-        a {
+       
             text-decoration: none;
             color: white;
-        }
+        
     }
 }
 
-.section_banner button:hover {
+.section_banner input:hover {
     background-color: #be7b0e;
 }
 
@@ -211,7 +205,6 @@ h2 {
         color: white;
     }
 }
-
 .section_store {
     display: flex;
     justify-content: center;
@@ -221,6 +214,7 @@ h2 {
         font-weight: bold;
         color: rgb(75, 52, 11);
         text-align: center;
+        margin: 20px;
     }
     .cards {
         display: flex;
@@ -247,7 +241,7 @@ h2 {
             width: 200px;
             color: rgb(75, 52, 11)
         }
-        button {
+        input {
             padding: 15px 30px;
             font-size: 20px;
             font-weight: 600;
@@ -256,10 +250,10 @@ h2 {
             border: none;
             outline: none;
             cursor: pointer;
-            a {
-                text-decoration: none;
-                color: white;
-            }
+            
+            text-decoration: none;
+            color: white;
+            
         }
     }
 }

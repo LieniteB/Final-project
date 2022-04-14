@@ -99,20 +99,10 @@ header ul {
   height: 70px;
   cursor: pointer;
   display: block;
-}
-
-.hero #Subscribe a {
-  display: block;
   color: white;
   text-decoration: none;
   font-weight: 500;
   font-size: 25px;
-}
-
-.hero #Subscribe :hover {
-  -webkit-box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
-          box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
-  color: #1F2937;
 }
 
 .hero #Subscribe:hover {
@@ -196,7 +186,7 @@ header ul {
   padding: 10px;
 }
 
-.section_banner button {
+.section_banner input {
   padding: 15px 30px;
   font-size: 20px;
   font-weight: 600;
@@ -205,14 +195,11 @@ header ul {
   border: none;
   outline: none;
   cursor: pointer;
-}
-
-.section_banner button a {
   text-decoration: none;
   color: white;
 }
 
-.section_banner button:hover {
+.section_banner input:hover {
   background-color: #be7b0e;
 }
 
@@ -292,6 +279,7 @@ h2 {
   font-weight: bold;
   color: #4b340b;
   text-align: center;
+  margin: 20px;
 }
 
 .section_store .cards {
@@ -331,7 +319,7 @@ h2 {
   color: #4b340b;
 }
 
-.section_store .card button {
+.section_store .card input {
   padding: 15px 30px;
   font-size: 20px;
   font-weight: 600;
@@ -340,9 +328,6 @@ h2 {
   border: none;
   outline: none;
   cursor: pointer;
-}
-
-.section_store .card button a {
   text-decoration: none;
   color: white;
 }
