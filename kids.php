@@ -63,7 +63,7 @@ $result4 = $con->query($sql4);
 
                 <div class="cards">
                     <div class="card">
-                        <img src="images/books.jpg" alt="">
+                        <img src="images/fairy3.jpg" alt="">
                         <?php
                         while ($row = $result->fetch_assoc()) :
                         ?>
@@ -80,7 +80,7 @@ $result4 = $con->query($sql4);
             
                 <div class="cards">
                     <div class="card">
-                        <img src="images/books.jpg" alt="">
+                        <img src="images/a_darkness_of_dragons.jpg" alt="">
                         <?php
                         while ($row = $result3->fetch_assoc()) :
                         ?>
@@ -96,7 +96,7 @@ $result4 = $con->query($sql4);
                 </div>
                 <div class="cards">
                     <div class="card">
-                        <img src="images/books.jpg" alt="">
+                        <img src="images/story.jpg" alt="">
                         <?php
                         while ($row = $result4->fetch_assoc()) :
                         ?>

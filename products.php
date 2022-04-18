@@ -57,7 +57,7 @@ $result2 = $con->query($sql2);
 
 
         <div class="store">
-            <h2 class="text">Some random information.</h2>
+            <h2 class="text">All we can offer</h2>
             <section class="section_store">
 
                 <div class="cards">
