@@ -49,8 +49,8 @@ $result3 = $con->query($sql3);
             <ul>
                 <li><a href="products.php">All</a></li>
                 <li><a href="kids.php">Kids</a></li>
-                <li><a href="young_adult.php">Young Adult</a></li>
-                <li><a class="active" href="adult.php">Adult</a></li>
+                <li><a href="young_adult.php">Adolescents</a></li>
+                <li><a class="active" href="adult.php">Adults</a></li>
             </ul>
 
 
@@ -58,28 +58,29 @@ $result3 = $con->query($sql3);
 
 
         <div class="store">
-            <h2 class="text">Adult</h2>
+            <h2 class="text">Adults</h2>
             <section class="section_store">
 
                 <div class="cards">
                     <div class="card">
-                        <img src="images/rojpg.jpg" alt="">
+                        <img src="images/rom.jpg" alt="">
                         <?php
                         while ($row = $result->fetch_assoc()) :
                         ?>
                         <p><?= $row["type"] ?> </p>
                         <h3><?= $row["price"] ?></h3>
                         <?php
-                         endwhile;
-                         ?>
-                        <button><a href="subscribe.html">subscribe</a></button>
+                        endwhile;
+                        ?>
+                        <input type=button onClick="parent.location='subscribe.html'"
+                        value='subscribe'>
                     </div>
 
 
                 </div>
                 <div class="cards">
                     <div class="card">
-                        <img src="images/mystery.jpg" alt="">
+                        <img src="images/my5.jpg" alt="">
                         <?php
                         while ($row = $result2->fetch_assoc()) :
                         ?>
@@ -88,14 +89,15 @@ $result3 = $con->query($sql3);
                         <?php
                          endwhile;
                          ?>
-                        <button><a href="subscribe.html">subscribe</a></button>
+                        <input type=button onClick="parent.location='subscribe.html'"
+                        value='subscribe'>
                     </div>
 
 
                 </div>
                 <div class="cards">
                     <div class="card">
-                        <img src="images/sh.jpg" alt="">
+                        <img src="images/sh2.jpg" alt="">
                         <?php
                         while ($row = $result3->fetch_assoc()) :
                         ?>
@@ -104,10 +106,9 @@ $result3 = $con->query($sql3);
                         <?php
                          endwhile;
                          ?>
-                        <button><a href="subscribe.html">subscribe</a></button>
+                        <input type=button onClick="parent.location='subscribe.html'"
+                        value='subscribe'>
                     </div>
-
-
                 </div>
             </section>
         </div>

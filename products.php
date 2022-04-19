@@ -9,11 +9,25 @@ if ($con->connect_error)
     die("Connection error" . $con->connect_error);
 
 
-$sql = "SELECT * FROM products where ID = '1'";
-$result = $con->query($sql);
 
-$sql2 = "SELECT * FROM products where ID ='2'";
+$sql = "SELECT * FROM products where ID = '10'";
+$result = $con->query($sql);
+$sql2 = "SELECT * FROM products where ID ='11'";
 $result2 = $con->query($sql2);
+$sql3 = "SELECT * FROM products where ID ='12'";
+$result3 = $con->query($sql3);
+$sql4 = "SELECT * FROM products where ID = '7'";
+$result4 = $con->query($sql4);
+$sql5 = "SELECT * FROM products where ID ='8'";
+$result5 = $con->query($sql5);
+$sql6 = "SELECT * FROM products where ID ='9'";
+$result6 = $con->query($sql6);
+$sql7 = "SELECT * FROM products where ID = '3'";
+$result7 = $con->query($sql7);
+$sql8 = "SELECT * FROM products where ID ='5'";
+$result8 = $con->query($sql8);
+$sql9 = "SELECT * FROM products where ID ='6'";
+$result9 = $con->query($sql9);
 ?>
 
 <!DOCTYPE html>
@@ -48,68 +62,186 @@ $result2 = $con->query($sql2);
             <ul>
                 <li><a class="active" href="products.php">All</a></li>
                 <li><a href="kids.php">Kids</a></li>
-                <li><a href="young_adult.php">Young Adult</a></li>
-                <li><a href="adult.php">Adult</a></li>
+                <li><a href="young_adult.php">Adolescents</a></li>
+                <li><a href="adult.php">Adults</a></li>
             </ul>
 
 
         </div>
 
 
-        <div class="store">
+        <div>
             <h2 class="text">All we can offer</h2>
-            <section class="section_store">
+            <table class="section_store">
+                <tr >
+                    <td>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/sh2.jpg" alt="">
+                                <?php
+                                while ($row = $result3->fetch_assoc()) :
+                                ?>
+                                <p><?= $row["type"] ?> </p>
+                                <h3><?= $row["price"] ?></h3>
+                                <?php
+                                endwhile;
+                                ?>
+                                <input type=button onClick="parent.location='subscribe.html'"
+                                value='subscribe'>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/my5.jpg" alt="">
+                                <?php
+                                while ($row = $result2->fetch_assoc()) :
+                                ?>
+                                <p><?= $row["type"] ?> </p>
+                                <h3><?= $row["price"] ?></h3>
+                                <?php
+                                endwhile;
+                                ?>
+                                <input type=button onClick="parent.location='subscribe.html'"
+                                value='subscribe'>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/rom.jpg" alt="">
+                                <?php
+                                while ($row = $result->fetch_assoc()) :
+                                ?>
+                                <p><?= $row["type"] ?> </p>
+                                <h3><?= $row["price"] ?></h3>
+                                <?php
+                                endwhile;
+                                ?>
+                                <input type=button onClick="parent.location='subscribe.html'"
+                                value='subscribe'>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
 
-                <div class="cards">
-                    <div class="card">
-                        <img src="images/books.jpg" alt="">
-                        <?php
-                        while ($row = $result->fetch_assoc()) :
-                        ?>
-                        <p><?= $row["type"] ?> </p>
-                        <h3><?= $row["price"] ?></h3>
-                        <?php
-                         endwhile;
-                         ?>
-                        
-                        <input type=button onClick="parent.location='subscribe.html'"
-                            value='subscribe'>
-                    </div>
+                <tr>
+                    <td>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/fantasyya2.jpg" alt="">
+                                <?php
+                                while ($row = $result6->fetch_assoc()) :
+                                ?>
+                                <p><?= $row["type"] ?> </p>
+                                <h3><?= $row["price"] ?></h3>
+                                <?php
+                                endwhile;
+                                ?>
+                                <input type=button onClick="parent.location='subscribe.html'"
+                                value='subscribe'>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/teenadv.jpg" alt="">
+                                <?php
+                                while ($row = $result5->fetch_assoc()) :
+                                ?>
+                                <p><?= $row["type"] ?> </p>
+                                <h3><?= $row["price"] ?></h3>
+                                <?php
+                                endwhile;
+                                ?>
+                                <input type=button onClick="parent.location='subscribe.html'"
+                                value='subscribe'>
+                            </div>
+                        </div>
 
+                    </td>
+                    <td>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/rh.jpg" alt="">
+                                <?php
+                                while ($row = $result4->fetch_assoc()) :
+                                ?>
+                                <p><?= $row["type"] ?> </p>
+                                <h3><?= $row["price"] ?></h3>
+                                <?php
+                                endwhile;
+                                ?>
+                                <input type=button onClick="parent.location='subscribe.html'"
+                                value='subscribe'>
+                            </div>
+                        </div>
 
-                </div>
-                <div class="cards">
-                    <div class="card">
-                        <img src="images/books.jpg" alt="">
-                        <?php
-                        while ($row = $result2->fetch_assoc()) :
-                        ?>
-                        <p><?= $row["type"] ?> </p>
-                        <h3>price: 35 eiro</h3>
-                        <?php
-                         endwhile;
-                         ?>
-                        
-                        <input type=button onClick="parent.location='subscribe.html'"
-                            value='subscribe'>
-                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/ft2.jpg" alt="">
+                                <?php
+                                while ($row = $result7->fetch_assoc()) :
+                                ?>
+                                <p><?= $row["type"] ?> </p>
+                                <h3><?= $row["price"] ?></h3>
+                                <?php
+                                endwhile;
+                                ?>
+                                <input type=button onClick="parent.location='subscribe.html'"
+                                value='subscribe'>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/adevnture2.jpg" alt="">
+                                <?php
+                                while ($row = $result8->fetch_assoc()) :
+                                ?>
+                                <p><?= $row["type"] ?> </p>
+                                <h3><?= $row["price"] ?></h3>
+                                <?php
+                                endwhile;
+                                ?>
+                                <input type=button onClick="parent.location='subscribe.html'"
+                                value='subscribe'>
+                            </div>
+                        </div>
 
+                    </td>
+                    <td>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="images/fantasy.jpg" alt="">
+                                <?php
+                                while ($row = $result9->fetch_assoc()) :
+                                ?>
+                                <p><?= $row["type"] ?> </p>
+                                <h3><?= $row["price"] ?></h3>
+                                <?php
+                                endwhile;
+                                ?>
+                                <input type=button onClick="parent.location='subscribe.html'"
+                                value='subscribe'>
+                            </div>
+                        </div>
 
-                </div>
-                <div class="cards">
-                    <div class="card">
-                        <img src="images/books.jpg" alt="">
-                        <p>type</p>
-                        <h3>price</h3>
-                        
-                        <input type=button onClick="parent.location='subscribe.html'"
-                            value='subscribe'>
-                    </div>
+                    </td>
+                </tr>
 
+            </table>
 
-                </div>
-            </section>
         </div>
+
         <footer>
             <p>@BookWorms</p>
 
